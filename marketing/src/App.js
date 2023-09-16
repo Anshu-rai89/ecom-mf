@@ -1,5 +1,5 @@
 import React from "react";
-import {Switch, Route, BrowserRouter} from 'react-router-dom';
+import {Switch, Route, Router} from 'react-router-dom';
 import {StylesProvider, createGenerateClassName} from '@material-ui/core/styles'
 import Pricing from './components/Pricing';
 import Landing from './components/Landing';
@@ -9,16 +9,16 @@ const generateClassName = createGenerateClassName({
 });
 
 
-export default () => {
+export default ({history}) => {
     return (
       <div>
-        <StylesProvider>
-          <BrowserRouter generateClassName={generateClassName}>
+        <StylesProvider generateClassName={generateClassName}>
+          <Router history={history}>
             <Switch>
               <Route path="/pricing" exact component={Pricing} />
               <Route path="/" exact component={Landing} />
             </Switch>
-          </BrowserRouter>
+          </Router>
         </StylesProvider>
       </div>
     );
