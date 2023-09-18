@@ -10,8 +10,4 @@
 #### Architecture Diagram 
 ![Flow](https://github.com/Anshu-rai89/ecom-mf/blob/main/assets/arch.png?raw=true)
 #### Infrastructure
-- s3
-- cloudfront
-
-#### CI/CD 
-- Github actions
+![Infra](https://github.com/Anshu-rai89/ecom-mf/blob/main/assets/infra.png?raw=true)
