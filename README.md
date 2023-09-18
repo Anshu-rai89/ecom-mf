@@ -1,4 +1,5 @@
-## A Micro-frontend based web platform for E-commerce APP 
+## A Micro-frontend based web platform for E-commerce APP
+[prod-url](https://d3afb5kd1magkt.cloudfront.net/)
 #### List of Apps powering e-commerce application 
 - Container (Host App)
 - Marketing (Remote App for Pricing page)
@@ -8,3 +9,9 @@
 
 #### Architecture Diagram 
 ![Flow](https://github.com/Anshu-rai89/ecom-mf/blob/main/assets/arch.png?raw=true)
+#### Infrastructure
+- s3
+- cloudfront
+
+#### CI/CD 
+- Github actions
