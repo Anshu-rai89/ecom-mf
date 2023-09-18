@@ -11,7 +11,10 @@ export default () => {
      }
     }
     useEffect(()=> {
-        const {handleNavigate} = mount(ref.current, {onNavigate});
+        const { handleNavigate } = mount(ref.current, {
+          onNavigate,
+          initialPath: history.location.pathname,
+        });
         history.listen(handleNavigate);
     }, [])
     return <div ref={ref}></div>
